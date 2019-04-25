@@ -19,3 +19,6 @@ test('Should not add objects', () => {
     expect(funToTest.addTwoNum(3, {})).toBe(null);
 });
 
+test('Should not add arrays', () => {
+    expect(funToTest.addTwoNum(3, [])).toBe(null);
+});
