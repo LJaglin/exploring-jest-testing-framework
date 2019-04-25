@@ -67,3 +67,9 @@ test('Should be less than 100', () => {
     const toCheck = 99;
     expect(toCheck).toBeLessThan(100);
 });
+
+//Regex
+test('There is no a in berries', () => {
+    const word = 'berries';
+    expect(word).not.toMatch(/a/);
+});
