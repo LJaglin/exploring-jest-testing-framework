@@ -62,3 +62,8 @@ test('User should be James Bond', () => {
     };
     expect(funToTest.createUser()).toEqual(user);
 });
+
+test('Should be less than 100', () => {
+    const toCheck = 99;
+    expect(toCheck).toBeLessThan(100);
+});
