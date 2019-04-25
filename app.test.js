@@ -14,3 +14,8 @@ test('Should add two numbers', () => {
 test('Should not add strings', () => {
     expect(funToTest.addTwoNum(3, '3')).toBe(null);
 });
+
+test('Should not add objects', () => {
+    expect(funToTest.addTwoNum(3, {})).toBe(null);
+});
+
