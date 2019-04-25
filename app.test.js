@@ -54,3 +54,11 @@ test('Should be truthy', () => {
     const x = 22;
     expect(funToTest.checkValue(x)).toBeTruthy();
 });
+
+test('User should be James Bond', () => {
+    const user = { 
+        firstName: 'James',
+        lastName: 'Bond'
+    };
+    expect(funToTest.createUser()).toEqual(user);
+});
