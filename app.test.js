@@ -10,3 +10,7 @@ test('Should add two numbers', () => {
     expect(funToTest.addTwoNum(-2, 2)).toBe(0);
     expect(funToTest.addTwoNum(-2, -2)).toBe(-4);
 });
+
+test('Should not add strings', () => {
+    expect(funToTest.addTwoNum(3, '3')).toBe(null);
+});
