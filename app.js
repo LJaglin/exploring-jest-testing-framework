@@ -10,7 +10,14 @@ const funToTest = {
         return names.filter(name => name.toLowerCase().charAt(0) !== 's');
     },
     isNull: () => null,
-    checkValue: x => x
+    checkValue: x => x,
+    createUser: () => {
+        const user = {
+            firstName: 'James',
+            lastName: 'Bond'
+        };
+        return user;
+    }
 }   
 
 module.exports = funToTest;
