@@ -22,3 +22,24 @@ test('Should not add objects', () => {
 test('Should not add arrays', () => {
     expect(funToTest.addTwoNum(3, [])).toBe(null);
 });
+
+//Test function that removes all s names from arrays
+test('Should remove alle s names', () => {
+    const names = ['Scott', 'Jack', 'Stacy', 'Peter'];
+    expect(funToTest.removeSNames(names)).not.toContain('Scott');
+});
+
+test('Should not remove other names', () => {
+    const names = ['Mark', 'Stephan', 'Mike'];
+    expect(funToTest.removeSNames(names)).toContain('Mark');
+    expect(funToTest.removeSNames(names)).toContain('Mike');
+});
+
+test('Should account for case', () => {
+    const names = ['Scott', 'Mark', 'stephan', 'Matthew'];
+    expect(funToTest.removeSNames(names)).toContain('Scott');
+    expect(funToTest.removeSNames(names)).toContain('stephan');
+});
+
+
+
