@@ -45,5 +45,9 @@ test('Should return null', () => {
     expect(funToTest.isNull()).toBe(null);
 });
 
+test('Should be falsy', () => {
+    const x = 0;
+    expect(funToTest.checkValue(x)).toBeFalsy();
+});
 
 
