@@ -1,0 +1,19 @@
+{
+  "name": "exploring-jest-testing-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LJaglin/exploring-jest-testing-framework.git"
+  },
+  "author": "LJaglin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LJaglin/exploring-jest-testing-framework/issues"
+  },
+  "homepage": "https://github.com/LJaglin/exploring-jest-testing-framework#readme"
+}
