@@ -24,7 +24,7 @@ test('Should not add arrays', () => {
 });
 
 //Test function that removes all s names from arrays
-test('Should remove alle s names', () => {
+test('Should remove all s names', () => {
     const names = ['Scott', 'Jack', 'Stacy', 'Peter'];
     expect(funToTest.removeSNames(names)).not.toContain('Scott');
 });
@@ -37,8 +37,8 @@ test('Should not remove other names', () => {
 
 test('Should account for case', () => {
     const names = ['Scott', 'Mark', 'stephan', 'Matthew'];
-    expect(funToTest.removeSNames(names)).toContain('Scott');
-    expect(funToTest.removeSNames(names)).toContain('stephan');
+    expect(funToTest.removeSNames(names)).not.toContain('Scott');
+    expect(funToTest.removeSNames(names)).not.toContain('stephan');
 });
 
 

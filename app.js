@@ -5,6 +5,9 @@ const funToTest = {
             return null;
         }
         return num1 + num2;
+    },
+    removeSNames: (names) => {
+        return names.filter(name => name.toLowerCase().charAt(0) !== 's');
     }
 }   
 
