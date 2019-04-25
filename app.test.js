@@ -50,4 +50,7 @@ test('Should be falsy', () => {
     expect(funToTest.checkValue(x)).toBeFalsy();
 });
 
-
+test('Should be truthy', () => {
+    const x = 22;
+    expect(funToTest.checkValue(x)).toBeTruthy();
+});
