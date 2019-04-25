@@ -41,5 +41,9 @@ test('Should account for case', () => {
     expect(funToTest.removeSNames(names)).not.toContain('stephan');
 });
 
+test('Should return null', () => {
+    expect(funToTest.isNull()).toBe(null);
+});
+
 
 

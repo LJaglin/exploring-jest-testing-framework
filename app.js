@@ -8,7 +8,8 @@ const funToTest = {
     },
     removeSNames: (names) => {
         return names.filter(name => name.toLowerCase().charAt(0) !== 's');
-    }
+    },
+    isNull: () => null
 }   
 
 module.exports = funToTest;
