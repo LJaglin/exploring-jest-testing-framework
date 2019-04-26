@@ -3,5 +3,5 @@ const reverseStr = str =>
         .split('')
         .reverse()
         .join('');  
-        
+
 module.exports = reverseStr;
